@@ -1,3 +1,11 @@
 *.log
 .DS_Store
 Thumbs.db
+
+# Local runtime files must stay on the development machine.
+**/config.local.php
+**/storage/
+**/.env
+**/.env.*
+**/LOCAL-ACCESS.txt
+**/credentials.json

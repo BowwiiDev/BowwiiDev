@@ -16,15 +16,17 @@ Based in Bangkok, Thailand. I have 15+ years of experience working on corporate 
 
 ## Portfolio projects
 
-### Personal Portfolio — PHP + Bootstrap
+### [Personal Portfolio — PHP + Bootstrap](projects/portfolio-php/)
 
 A responsive portfolio with project filters, project detail pages, a downloadable resume, and local frontend assets. The public-facing presentation summarizes professional experience; it does not include employer application source code.
 
-### Habitat — Property Explorer (demo)
+### [Habitat — Property Explorer (demo)](projects/property-explorer-php/)
 
 An independent PHP/MySQL demonstration with property search, filters, an illustrative map, and an authenticated CRUD back office. All records are fictional. Built with Codex assistance as a portfolio and learning project.
 
-Repository links will be added after the projects are published on this account.
+Each project includes setup instructions, screenshots, and verification notes. The PHP applications require PHP hosting to run; this repository provides their source code.
+
+![Portfolio preview](projects/portfolio-php/docs/portfolio-desktop.png)
 
 ## About my professional work
 
