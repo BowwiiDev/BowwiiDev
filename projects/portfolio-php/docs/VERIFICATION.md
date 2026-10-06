@@ -1,4 +1,18 @@
-# Local verification - 2 October 2026
+# Local verification - 6 October 2026
+
+The role-and-link update was checked locally on Windows with PHP 8.2.12 and the Codex in-app browser:
+
+- PHP syntax checks passed for index.php, project.php, includes/data.php, and includes/case-studies.php. JavaScript syntax also passed.
+- All seven detail routes rendered with the expected contribution wording and public website links; unknown and array IDs returned 404 in PHP rendering checks.
+- Category filters returned two PHP applications, one custom WordPress project, three theme customizations, one prototype, and seven total projects.
+- Metro, Career, and all three theme-customization modals displayed the expected links. Switching to the campaign modal removed links and role text from the previous project.
+- The homepage had no horizontal overflow at 320, 390, 768, and 1440px. Desktop and mobile presentation were inspected.
+- Metro and Career remain the two full case studies. Six public website URLs were added to featured work, relevant project cards, modals, and direct detail pages.
+- The public company websites were reviewed separately on 6 October. Their administration interfaces and form submissions were not tested.
+
+Archived screenshots in docs show an earlier version of the portfolio.
+
+## Previous verification - 2 October 2026
 
 PHP 8.2.12, Windows, headless Microsoft Edge via Playwright.
 

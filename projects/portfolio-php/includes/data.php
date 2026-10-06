@@ -1,37 +1,125 @@
 <?php
 declare(strict_types=1);
 
-// Content based on the resume and reviewed local project implementations.
-// Edit this file to update the content. Display text is escaped in the template.
+// Professional content and project roles confirmed by the portfolio owner.
+// Display text is escaped in the templates.
 $profile = [
 'name' => 'Watchiraporn Suphachrunsap',
 'first_name' => 'Watchiraporn',
 'role' => 'Senior Web Developer',
 'email' => 'wachiraporn.supha@gmail.com',
-'phone' => '087-212-9399',
-'phone_link' => '+66872129399',
 'location' => 'Bangkok, Thailand',
 'github' => 'https://github.com/BowwiiDev',
+'habitat' => 'projects/habitat/',
 'resume' => 'assets/documents/Watchiraporn-Suphachrunsap-Web-Developer.pdf'
 ];
 
 $projects = [[
 'id' => 'metro',
+'case_study' => true,
 'category' => 'php',
-'label' => 'PHP web application',
-'title' => 'SENA Metro Project Map',
+'label' => 'Custom PHP application',
+'title' => 'SENA Metro & Metro International',
 'company' => 'SENA Development',
-'description' => 'Property discovery with map filters, project details, and tools for managing content and leads.',
+'description' => 'Custom property discovery applications with map filters, project details, and enquiry workflows for Thai and international audiences.',
 'tags' => ['PHP',
 'MySQL',
 'JavaScript'],
 'visual_title' => 'Find a place. Explore the map.',
 'visual_note' => 'MAP SEARCH / PROJECT DETAILS / ADMIN',
-'overview' => 'A property discovery application with map markers, filters, project details, and lead registration, supported by a PHP/MySQL back office.',
-'contributions' => ['Developed map-based discovery, filters, project detail pages, and registration workflows.',
+'overview' => 'A custom PHP/MySQL property discovery project, developed with Codex assistance, with Thai and international public websites, map filters, project details, enquiries, and back-office tools.',
+'contributions' => ['Developed the Metro applications with Codex assistance, including map-based discovery, filters, project detail pages, and registration workflows.',
 'Built administration for projects, images, property types, train lines, map positions, lead search, and CSV export.',
 'Used prepared statements, output escaping, CSRF checks, and upload validation.'],
-'outcome' => 'Connected property browsing with practical content and lead management in one application.'
+'outcome' => 'Connected property browsing with practical content and lead management in one application.',
+'role_note' => 'Custom application development with Codex assistance.',
+'links' => [[
+'label' => 'Visit Metro',
+'url' => 'https://map.sena.co.th/metro/'
+],
+[
+'label' => 'Visit Metro International',
+'url' => 'https://map.sena.co.th/metro-inter/'
+]]
+],
+[
+'id' => 'career',
+'case_study' => true,
+'category' => 'cms',
+'label' => 'Custom WordPress theme',
+'title' => 'SENA Career',
+'company' => 'SENA Development',
+'description' => 'A WordPress recruitment website with a theme I wrote and job filters I developed.',
+'tags' => ['WordPress',
+'PHP',
+'Bootstrap',
+'Gravity Forms'],
+'visual_title' => 'Find your next opportunity.',
+'visual_note' => 'CUSTOM THEME / JOB FILTERS / FORMS',
+'overview' => 'A WordPress recruitment theme covering job listings, job details, employee stories, and internship content.',
+'contributions' => ['Wrote the custom WordPress theme and developed job-function, location, and employment-type filters.',
+'Integrated Gravity Forms applications with the relevant job context.',
+'Built reusable content sections and Gutenberg block patterns for content editors.'],
+'outcome' => 'Combined structured recruitment content with reusable publishing tools and job-specific applications.',
+'role_note' => 'Wrote the WordPress theme and developed the job filters.',
+'links' => [[
+'label' => 'Visit SENA Career',
+'url' => 'https://career.senaidea.com/'
+]]
+],
+[
+'id' => 'rentnex',
+'category' => 'customization',
+'label' => 'WordPress theme customization',
+'title' => 'RentNex',
+'company' => 'Sen X',
+'description' => 'A rental property website with project listings, property details, and registration content.',
+'tags' => ['WordPress',
+'Theme Customization'],
+'overview' => 'A rental property website with project listings, property details, and registration content. My role was to customize an existing WordPress theme for the business website.',
+'role_note' => 'Customized an existing WordPress theme.',
+'contributions' => ['Customized a ready-made WordPress theme to suit RentNex and its website requirements.'],
+'outcome' => 'Delivered a business website using an adapted WordPress theme.',
+'links' => [[
+'label' => 'Visit RentNex',
+'url' => 'https://rentnex.senxgroup.com/'
+]]
+],
+[
+'id' => 'green-auto',
+'category' => 'customization',
+'label' => 'WordPress theme customization',
+'title' => 'SENA Green Auto',
+'company' => 'SENA Development',
+'description' => 'An automotive business website presenting EV brands, services, news, and contact options.',
+'tags' => ['WordPress',
+'Theme Customization'],
+'overview' => 'An automotive business website presenting EV brands, services, news, and contact options. My role was to customize an existing WordPress theme for the business website.',
+'role_note' => 'Customized an existing WordPress theme.',
+'contributions' => ['Customized a ready-made WordPress theme to suit SENA Green Auto and its website requirements.'],
+'outcome' => 'Delivered a business website using an adapted WordPress theme.',
+'links' => [[
+'label' => 'Visit SENA Green Auto',
+'url' => 'https://senagreenauto.co.th/'
+]]
+],
+[
+'id' => 'logistics',
+'category' => 'customization',
+'label' => 'WordPress theme customization',
+'title' => 'SENA Logistics',
+'company' => 'SENA Development',
+'description' => 'A business website presenting warehouse project information, location, specifications, and enquiries.',
+'tags' => ['WordPress',
+'Theme Customization'],
+'overview' => 'A business website presenting warehouse project information, location, specifications, and enquiries. My role was to customize an existing WordPress theme for the business website.',
+'role_note' => 'Customized an existing WordPress theme.',
+'contributions' => ['Customized a ready-made WordPress theme to suit SENA Logistics and its website requirements.'],
+'outcome' => 'Delivered a business website using an adapted WordPress theme.',
+'links' => [[
+'label' => 'Visit SENA Logistics',
+'url' => 'https://logistics.sena.co.th/'
+]]
 ],
 [
 'id' => 'campaign',
@@ -53,25 +141,6 @@ $projects = [[
 'outcome' => 'Made registration records and notification delivery easier to manage and troubleshoot.'
 ],
 [
-'id' => 'career',
-'category' => 'cms',
-'label' => 'WordPress development',
-'title' => 'SENA Career',
-'company' => 'SENA Development',
-'description' => 'A custom recruitment theme with job discovery, flexible content, and contextual application forms.',
-'tags' => ['WordPress',
-'PHP',
-'Bootstrap',
-'Gravity Forms'],
-'visual_title' => 'Find your next opportunity.',
-'visual_note' => 'CUSTOM THEME / JOB FILTERS / FORMS',
-'overview' => 'A WordPress recruitment theme covering job listings, job details, employee stories, and internship content.',
-'contributions' => ['Created custom post types, taxonomies, and filters for job function, location, and employment type.',
-'Integrated Gravity Forms applications with the relevant job context.',
-'Built reusable content sections and Gutenberg block patterns for content editors.'],
-'outcome' => 'Combined structured recruitment content with reusable publishing tools and job-specific applications.'
-],
-[
 'id' => 'property-chat',
 'category' => 'prototype',
 'label' => 'Functional prototype',
@@ -91,21 +160,43 @@ $projects = [[
 'outcome' => 'A working prototype for evaluating conversational property discovery and widget integration.'
 ]];
 
-$experience = [
-    [
+$experience = [[
 'period' => '2024 — Present',
 'company' => 'SENA Development Pcl.',
 'role' => 'Web Developer',
 'summary' => 'Building and maintaining websites, PHP applications, and content workflows.',
 'details' => ['Maintain and improve the corporate website and 22+ residential project sites.',
-'Develop PHP/MySQL features for property discovery, campaign registration, and back-office management; customize WordPress recruitment content and forms.',
+'Develop PHP/MySQL applications with Codex assistance for Metro property discovery; write the SENA Career WordPress theme and job filters.',
+'Customize existing WordPress themes for RentNex, SENA Green Auto, and SENA Logistics.',
 'Connect registration workflows with internal services and email notifications, and troubleshoot application and hosting issues.',
 'Support campaign landing pages, responsive HTML email, technical SEO, and workflow automation.']
 ],
-    ['period' => '2015 — 2024', 'company' => 'IT Ready Co., Ltd.', 'role' => 'Web Developer', 'summary' => 'Nine years of building responsive websites and custom CMS experiences.', 'details' => ['Developed and maintained WordPress and Drupal websites, themes, and plugins for 30+ corporate projects.', 'Turned wireframes and PSD designs into HTML, CSS, and JavaScript interfaces.', 'Created responsive email campaigns and optimized accessibility, compatibility, and performance.']],
-    ['period' => '2011 — 2015', 'company' => 'Global Computer Network Co., Ltd.', 'role' => 'Webmaster', 'summary' => 'End-to-end web applications, site operations, and hands-on technical support.', 'details' => ['Analyzed requirements and built custom applications with HTML, PHP, CSS, jQuery, and MySQL.', 'Managed cross-browser compatibility, navigation, and troubleshooting.', 'Wrote technical documentation and trained end users.']],
-    ['period' => '2010 — 2011', 'company' => 'Rattana Bundit University', 'role' => 'Corporate Image Department', 'summary' => 'Where visual design met the web.', 'details' => ['Translated structural layouts into HTML / CSS templates for the department website.', 'Designed logos, advertising banners, brochures, and other marketing assets.']],
-];
+[
+'period' => '2015 — 2024',
+'company' => 'IT Ready Co., Ltd.',
+'role' => 'Web Developer',
+'summary' => 'Nine years of building responsive websites and custom CMS experiences.',
+'details' => ['Developed and maintained WordPress and Drupal websites, themes, and plugins for 30+ corporate projects.',
+'Turned wireframes and PSD designs into HTML, CSS, and JavaScript interfaces.',
+'Created responsive email campaigns and optimized accessibility, compatibility, and performance.']
+],
+[
+'period' => '2011 — 2015',
+'company' => 'Global Computer Network Co., Ltd.',
+'role' => 'Webmaster',
+'summary' => 'End-to-end web applications, site operations, and hands-on technical support.',
+'details' => ['Analyzed requirements and built custom applications with HTML, PHP, CSS, jQuery, and MySQL.',
+'Managed cross-browser compatibility, navigation, and troubleshooting.',
+'Wrote technical documentation and trained end users.']
+],
+[
+'period' => '2010 — 2011',
+'company' => 'Rattana Bundit University',
+'role' => 'Corporate Image Department',
+'summary' => 'Where visual design met the web.',
+'details' => ['Translated structural layouts into HTML / CSS templates for the department website.',
+'Designed logos, advertising banners, brochures, and other marketing assets.']
+]];
 
 $skills = [[
 'number' => '01',

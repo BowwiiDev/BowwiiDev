@@ -53,7 +53,24 @@ document.querySelectorAll('[data-project]').forEach(link => {
         document.getElementById('projectModalTitle').textContent = project.title;
         document.getElementById('modal-category').textContent = `${project.company} / ${project.label}`;
         document.getElementById('modal-overview').textContent = project.overview;
+        const role = document.getElementById('modal-role');
+        role.textContent = project.role_note || '';
+        role.hidden = !project.role_note;
+        const liveLinks = document.getElementById('modal-live-links');
+        liveLinks.replaceChildren(...(project.links || []).map(item => {
+            const link = document.createElement('a');
+            link.className = 'text-link';
+            link.href = item.url;
+            link.target = '_blank';
+            link.rel = 'noopener noreferrer';
+            link.textContent = item.label + ' ↗';
+            return link;
+        }));
+        liveLinks.hidden = !(project.links || []).length;
         document.getElementById('modal-outcome').textContent = project.outcome;
+        const caseLink = document.getElementById('modal-case-study');
+        caseLink.hidden = !project.case_study;
+        caseLink.href = 'project.php?id=' + encodeURIComponent(project.id);
         const contributions = document.getElementById('modal-contributions');
         contributions.replaceChildren(...project.contributions.map(text => {
             const li = document.createElement('li'); li.textContent = text; return li;
