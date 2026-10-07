@@ -9,7 +9,8 @@ A responsive, server-rendered personal portfolio built with PHP and Bootstrap. C
 - Responsive layout with 14px page copy and clear heading hierarchy.
 - PHP content arrays separated from the presentation template.
 - Seven project summaries with category filters and Bootstrap project detail modals.
-- Two full case studies for Metro and the SENA Career custom theme.
+- Three full case studies: Metro, the SENA Career custom theme, and campaign website optimization.
+- Corporate Marketing / Digital Channel & Marketing Technology experience, with a dedicated marketing technology filter.
 - Six public website links, with confirmed development roles on cards, modals, and detail pages.
 - Standalone project detail URLs, available without JavaScript.
 - Experience sections, skill groups, and a downloadable two-page resume.
@@ -33,7 +34,7 @@ Open **http://127.0.0.1:8082/**. With XAMPP, use `C:\xampp\php\php.exe` if PHP i
 index.php                Main portfolio page
 project.php              Project detail route (id allowlist)
 includes/data.php        Profile, projects, experience, and skills
-includes/case-studies.php Full Metro and Career case-study content
+includes/case-studies.php Metro, Career, and campaign case-study content
 assets/css/style.css     Design and responsive styles
 assets/js/main.js        Filters, modal, navigation, and clipboard logic
 assets/vendor/           Bootstrap and its license
@@ -52,11 +53,12 @@ The experience dates and figures are supplied by the resume owner. Company proje
 | --- | --- | --- |
 | SENA Metro & Metro International | Custom PHP/MySQL applications developed with Codex assistance | [Metro](https://map.sena.co.th/metro/) · [International](https://map.sena.co.th/metro-inter/) |
 | SENA Career | Wrote the WordPress theme and developed job filters | [Career](https://career.senaidea.com/) |
+| SENA Break Every Limit | Campaign landing pages, metadata, structured data, and crawler rules for SEO/AEO and ChatGPT Ads readiness | [Case study](https://bowwiidev.com/project.php?id=campaign) |
 | RentNex | Customized an existing WordPress theme | [RentNex](https://rentnex.senxgroup.com/) |
 | SENA Green Auto | Customized an existing WordPress theme | [Green Auto](https://senagreenauto.co.th/) |
 | SENA Logistics | Customized an existing WordPress theme | [Logistics](https://logistics.sena.co.th/) |
 
-The campaign project and Property Search Chat prototype retain their existing summaries. Habitat is a separate personal demo. Public website links do not provide employer source code or administration access.
+The campaign case study covers owner-confirmed website optimization within Corporate Marketing, Digital Channel & Marketing Technology, alongside the existing registration/email/CRM workflows. It records implementation work without claiming measured ranking, AI citation, ad delivery, or conversion gains. Property Search Chat is a prototype; Habitat is a separate personal demo. Public links do not provide employer source code or administration access.
 
 ## Validation
 

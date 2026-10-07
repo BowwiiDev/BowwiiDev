@@ -136,6 +136,73 @@ $caseStudies = [
         ],
         'reflection' => 'The core of this work is making content and application context fit together. The custom theme handles presentation, but the job records and form hooks are what connect browsing a vacancy to submitting an application.',
         'boundary' => 'This case study describes my development contributions and the theme implementation. It does not publish applicant data, company source code, or administration access. The workflow illustration is explanatory, not a screenshot of a live recruitment system.',
+        'next' => 'campaign'
+    ],
+    'campaign' => [
+        'subtitle' => 'Connecting campaign websites with search and marketing channels.',
+        'summary' => 'Website implementation within Corporate Marketing, Digital Channel & Marketing Technology. The latest work improves campaign landing pages, metadata, structured data, and crawler rules for SEO/AEO and ChatGPT Ads readiness, alongside technical optimization of company-group websites.',
+        'role' => 'Web development & marketing technology · page implementation, search structure & crawler access',
+        'audience' => 'Campaign visitors, search crawlers, and the Corporate Marketing team',
+        'scope' => 'Company project · campaign website optimization',
+        'theme' => 'campaign',
+        'reading_time' => '4 minute read',
+        'challenge' => [
+            'title' => 'Prepare the website for the channels around it',
+            'paragraphs' => [
+                'The campaign website needed useful landing pages for visitors and a clear page structure for search and advertising systems. My latest work focused on the website paths and their landing pages, metadata, structured data, and crawler-access rules.',
+                'This work sits within Corporate Marketing, Digital Channel & Marketing Technology. It also extends to technical SEO/AEO improvements across company-group websites, while the campaign application continues to support registration and follow-up workflows.'
+            ]
+        ],
+        'responsibilities' => [
+            'Improved campaign landing pages and website paths to support digital marketing and ChatGPT Ads readiness.',
+            'Implemented page metadata and structured data to describe the information presented on the relevant pages.',
+            'Adjusted robots.txt rules governing crawler access to campaign paths.',
+            'Applied technical SEO/AEO improvements across company-group websites.',
+            'Developed campaign registration, UTM and source URL capture, administrative workflows, and email/CRM handoffs.'
+        ],
+        'flow_title' => 'Four parts of campaign website readiness',
+        'flow' => [
+            ['title' => 'Landing page', 'text' => 'Prepare the campaign destination and visitor journey.'],
+            ['title' => 'Metadata', 'text' => 'Describe the page and its campaign context.'],
+            ['title' => 'Structured data', 'text' => 'Provide a machine-readable description of page information.'],
+            ['title' => 'Crawler access', 'text' => 'Review the rules governing the relevant website paths.']
+        ],
+        'decisions' => [
+            [
+                'title' => 'Keep optimization connected to the landing page',
+                'implementation' => 'The changes cover the campaign landing pages and their page metadata and structured data together.',
+                'reason' => 'The visible page and its technical descriptions need to communicate the same campaign information.',
+                'tradeoff' => 'Campaign content changes require reviewing these elements together. The implementation should be checked against the published page before each campaign update.'
+            ],
+            [
+                'title' => 'Review access at the website-path level',
+                'implementation' => 'robots.txt rules were adjusted for crawler access to the relevant campaign paths.',
+                'reason' => 'A prepared landing page needs to be reachable by the intended crawler as well as by a visitor.',
+                'tradeoff' => 'A path rule depends on the robots.txt file for the correct host. Hosting, redirects, and any upstream access controls also need review when validating reachability.'
+            ],
+            [
+                'title' => 'Describe the delivery as website readiness',
+                'implementation' => 'The portfolio records the landing-page, metadata, structured-data, and crawler-rule work that I performed.',
+                'reason' => 'These are specific implementation contributions that can be discussed independently of campaign buying or performance reports.',
+                'tradeoff' => 'Ranking, AI citations, ad approval, and conversion impact require separate evidence and ongoing measurement.'
+            ]
+        ],
+        'delivery' => [
+            'Campaign landing pages with updated metadata and structured data.',
+            'Crawler-access rules addressing the relevant campaign website paths.',
+            'Technical SEO/AEO improvements across company-group websites.',
+            'Registration and follow-up workflows connecting the website with marketing operations.'
+        ],
+        'outcome_note' => 'This case study describes owner-confirmed implementation work. Search rankings, AI citations, ad delivery, and conversion gains have not been quantified in the portfolio.',
+        'review_points' => [
+            'Check landing-page availability, redirects, and the destination used for the campaign.',
+            'Inspect rendered metadata and validate structured data against the visible page content.',
+            'Check robots.txt at the root of the relevant host and how its rules apply to campaign paths.',
+            'Review crawler reachability and any hosting access controls for the intended advertising/search channel.',
+            'Keep implementation checks separate from campaign performance reports when presenting results.'
+        ],
+        'reflection' => 'Website development is part of the marketing channel. This work brings the visitor-facing page, its machine-readable descriptions, and access rules into the same implementation conversation.',
+        'boundary' => 'This describes website implementation and optimization. It does not publish company source code, customer records, advertising-account credentials, or unverified campaign performance. The workflow is an explanatory illustration.',
         'next' => 'metro'
     ]
 ];

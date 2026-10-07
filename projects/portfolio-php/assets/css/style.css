@@ -38,6 +38,8 @@ html{scroll-behavior:smooth;scroll-padding-top:100px}body{background:var(--paper
 .project-actions .text-link{margin-top:0;font-size:14px;line-height:1.7}
 .project-role{font-size:14px;line-height:1.8;color:var(--ink)!important;border-left:2px solid var(--accent);padding-left:14px;margin-block:18px}
 .case-introduction>.project-actions{margin-top:24px}
+.featured-case-campaign{grid-column:1/-1;background:#e5ece8}
+.case-workflow-campaign{background:#e5ece8}
 .project-summary .project-actions{gap:10px 18px;margin-top:16px}
 #modal-live-links{margin-bottom:24px}
 @media(max-width:575.98px){.project-actions{gap:10px 18px}}

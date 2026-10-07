@@ -10,18 +10,18 @@ header('X-Content-Type-Options: nosniff');
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#faf9f6">
-    <meta name="description" content="Watchiraporn Suphachrunsap — Senior Web Developer in Bangkok. 15+ years building PHP applications, WordPress websites, and responsive interfaces.">
-    <meta property="og:title" content="Watchiraporn — PHP & WordPress Developer">
-    <meta property="og:description" content="Explore PHP web applications, custom WordPress development, and responsive interfaces by Watchiraporn Suphachrunsap.">
+    <meta name="description" content="Watchiraporn Suphachrunsap — Senior Web Developer in Bangkok. PHP, WordPress and marketing technology: campaign landing pages, technical SEO/AEO and ChatGPT Ads readiness.">
+    <meta property="og:title" content="Watchiraporn — Web Development & Marketing Technology">
+    <meta property="og:description" content="Explore PHP applications, custom WordPress themes, and campaign website optimization for SEO/AEO and ChatGPT Ads readiness.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://bowwiidev.com/">
     <link rel="canonical" href="https://bowwiidev.com/">
     <title>Watchiraporn — Senior Web Developer</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="assets/vendor/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/style.css?v=project-roles-20261006">
+    <link rel="stylesheet" href="assets/css/style.css?v=martech-20261007">
     <script src="assets/vendor/bootstrap.bundle.min.js" defer></script>
-    <script src="assets/js/main.js?v=project-roles-20261006" defer></script>
+    <script src="assets/js/main.js?v=martech-20261007" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -47,8 +47,8 @@ header('X-Content-Type-Options: nosniff');
                 <div class="col-lg-7 hero-copy">
                     <p class="eyebrow hero-kicker">Senior web developer <span class="kicker-dot" aria-hidden="true">·</span> Bangkok, Thailand</p>
                     <h1>Hi, I’m Bowwii.<br>I build for <em>the web.</em></h1>
-                    <p class="hero-specialty">PHP applications &amp; custom WordPress themes.</p>
-                    <p class="hero-intro">I’m <?= e($profile['first_name']) ?>, a developer with 15+ years of experience turning requirements into websites and tools that teams use every day.</p>
+                    <p class="hero-specialty">Web development &amp; marketing technology.</p>
+                    <p class="hero-intro">I’m <?= e($profile['first_name']) ?>, a developer with 15+ years of experience building PHP applications and custom WordPress themes. In Corporate Marketing, I also improve campaign websites for technical SEO/AEO and ChatGPT Ads readiness.</p>
                     <div class="hero-actions"><a href="#work" class="btn btn-dark">See selected work <span aria-hidden="true">↗</span></a><a href="<?= e($profile['resume']) ?>" class="text-link" download>Download resume <span aria-hidden="true">↓</span></a></div>
                     <a class="github-link" href="<?= e($profile['github']) ?>" target="_blank" rel="noopener noreferrer">Find me on GitHub <span aria-hidden="true">↗</span></a>
                 </div>
@@ -67,14 +67,14 @@ header('X-Content-Type-Options: nosniff');
         <div class="container">
             <div class="section-heading"><div><p class="eyebrow section-label">Selected work</p><h2>A few things I’ve <em>built.</em></h2></div><p>Custom applications, a theme I wrote,<br>and WordPress websites I customized.</p></div>
             <div class="featured-cases">
-            <?php foreach (['metro', 'career'] as $caseId): $featuredCase = $caseStudies[$caseId]; $featuredProject = null; foreach ($projects as $item) { if ($item['id'] === $caseId) { $featuredProject = $item; break; } } ?>
+            <?php foreach (['metro', 'career', 'campaign'] as $caseId): $featuredCase = $caseStudies[$caseId]; $featuredProject = null; foreach ($projects as $item) { if ($item['id'] === $caseId) { $featuredProject = $item; break; } } ?>
                 <article class="featured-case featured-case-<?= e($caseId) ?>"><p class="eyebrow">Company project / <?= e($featuredProject['label']) ?></p><h3><a href="project.php?id=<?= e($caseId) ?>"><?= e($featuredProject['title']) ?></a></h3><p class="featured-case-subtitle"><?= e($featuredCase['subtitle']) ?></p><ol class="featured-flow" aria-label="Project workflow"><?php foreach ($featuredCase['flow'] as $step): ?><li><?= e($step['title']) ?></li><?php endforeach; ?></ol><p><?= e($featuredCase['summary']) ?></p><p class="project-role"><?= e($featuredProject['role_note']) ?></p><div class="project-actions"><a class="text-link" href="project.php?id=<?= e($caseId) ?>">Read the case study <span aria-hidden="true">↗</span></a><?php foreach ($featuredProject['links'] as $link): ?><a class="text-link" href="<?= e($link['url']) ?>" target="_blank" rel="noopener noreferrer"><?= e($link['label']) ?> <span aria-hidden="true">↗</span></a><?php endforeach; ?></div></article>
             <?php endforeach; ?>
             </div>
             <div class="other-work-heading"><h3>Project index</h3><p>My role in each project, with links to the public websites.</p></div>
             <div class="work-filters" role="group" aria-label="Filter projects">
                 <button type="button" class="filter-button active" data-filter="all" aria-pressed="true">All work <span><?= str_pad((string) count($projects), 2, '0', STR_PAD_LEFT) ?></span></button>
-                <?php foreach (['php' => 'PHP applications', 'cms' => 'Custom WordPress', 'customization' => 'Theme customization', 'prototype' => 'Prototype'] as $category => $label): $count = count(array_filter($projects, fn($item) => $item['category'] === $category)); ?>
+                <?php foreach (['php' => 'PHP applications', 'cms' => 'Custom WordPress', 'martech' => 'Marketing technology', 'customization' => 'Theme customization', 'prototype' => 'Prototype'] as $category => $label): $count = count(array_filter($projects, fn($item) => $item['category'] === $category)); ?>
                 <button type="button" class="filter-button" data-filter="<?= e($category) ?>" aria-pressed="false"><?= e($label) ?> <span><?= str_pad((string) $count, 2, '0', STR_PAD_LEFT) ?></span></button>
                 <?php endforeach; ?>
             </div>
@@ -86,7 +86,7 @@ header('X-Content-Type-Options: nosniff');
                 </div>
             <?php endforeach; ?>
             </div>
-            <p class="work-note">Metro was developed with Codex assistance. SENA Career uses a theme I wrote and job filters I developed. RentNex, SENA Green Auto, and SENA Logistics are existing-theme customizations. Company source code and internal data are private; Property Search Chat is a functional prototype.</p>
+            <p class="work-note">Metro was developed with Codex assistance. SENA Career uses a theme I wrote and job filters I developed. Campaign work covers landing pages, metadata, structured data, and crawler rules for SEO/AEO and ChatGPT Ads readiness. RentNex, SENA Green Auto, and SENA Logistics are existing-theme customizations. Property Search Chat is a functional prototype.</p>
             <div class="personal-work-heading"><p class="eyebrow section-label">A personal project</p><h3>A place to experiment.</h3></div>
             <article class="demo-feature" id="demo">
                 <a class="demo-image" href="<?= e($profile['habitat']) ?>" aria-label="Explore the Habitat personal portfolio demo"><img src="assets/images/habitat-preview.png" alt="Habitat demo showing property search, map filters, and fictional home listings" loading="lazy" width="1440" height="1000"></a>
@@ -100,7 +100,7 @@ header('X-Content-Type-Options: nosniff');
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-4"><p class="eyebrow section-label">A little about me</p><h2>The person<br>behind <em>the code.</em></h2></div>
-                <div class="col-lg-8 about-content"><p class="lead-copy">I like making the everyday work<br class="d-none d-xl-block"> behind a website a little easier.</p><p>My work has taken me from turning designs into HTML and CSS to building PHP/MySQL applications and custom WordPress themes. I developed the Metro applications with Codex assistance, wrote the SENA Career theme and job filters, and customized existing themes for RentNex, SENA Green Auto, and SENA Logistics. My earlier work also includes Drupal, corporate websites, and campaign registration.</p><p>The parts I care about are often behind the scenes: forms that send the right information, content that editors can update, and code the next developer can understand. I work through the requirements, build the interface and back office, and help get it running.</p>
+                <div class="col-lg-8 about-content"><p class="lead-copy">I like making the everyday work<br class="d-none d-xl-block"> behind a website a little easier.</p><p>My work has taken me from turning designs into HTML and CSS to building PHP/MySQL applications and custom WordPress themes. I developed the Metro applications with Codex assistance, wrote the SENA Career theme and job filters, and customized existing themes for RentNex, SENA Green Auto, and SENA Logistics.</p><p>I currently work within Corporate Marketing, Digital Channel &amp; Marketing Technology. Alongside application development, I improve campaign landing pages and company-group websites for technical SEO/AEO. My latest campaign work covers metadata, structured data, and crawler rules to prepare landing pages for ChatGPT Ads.</p><p>The parts I care about are often behind the scenes: forms that send the right information, content that editors can update, and code the next developer can understand. I work through the requirements, build the interface and back office, and help get it running.</p>
                     <div class="row stats-row"><div class="col-4"><strong>15<span>+</span></strong><span>Years of experience</span></div><div class="col-4"><strong>30<span>+</span></strong><span>Corporate projects<br><small>at IT Ready</small></span></div><div class="col-4"><strong>22<span>+</span></strong><span>Residential sites<br><small>at SENA</small></span></div></div>
                 </div>
             </div>

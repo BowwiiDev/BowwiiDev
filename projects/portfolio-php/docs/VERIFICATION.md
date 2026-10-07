@@ -1,4 +1,19 @@
-# Local verification - 6 October 2026
+# Local verification - 7 October 2026
+
+Marketing technology content update, checked with PHP 8.2.12 and the Codex in-app browser on a local PHP server:
+
+- Profile, current SENA experience, skills, campaign summary, modal and full case study include the owner-confirmed Corporate Marketing / Digital Channel & Marketing Technology scope.
+- Campaign copy names landing pages, metadata, structured data and robots.txt rules for website paths, using SEO/AEO and ChatGPT Ads readiness wording without unverified performance claims.
+- Three featured case studies render: Metro, Career and Campaign. The campaign modal links to its full case study; the next-case navigation uses the matching project title.
+- Filters returned all 7, PHP 1, custom WordPress 1, marketing technology 1, theme customization 3 and prototype 1.
+- The homepage had no horizontal overflow at 320, 390, 768 and 1440px; the campaign case page had no horizontal overflow at 320, 390 and 768px. Desktop and mobile views were inspected.
+- No PHP warnings were present in the final homepage or campaign rendering, and no browser error/warning logs were observed during the checks.
+- PHP and JavaScript syntax checks passed. All seven detail routes, their public links and role wording, and unknown/array-ID 404 handling passed the existing rendering checks.
+- The updated resume remains two pages with selectable text; both rendered pages were visually inspected. The website, GitHub profile and source/deployment copies use the same revised PDF.
+
+These checks cover the portfolio and documents. The company websites' crawler rules, search visibility, advertising delivery and conversion metrics were not independently tested in this update. Uploading the provided package is still required to update the public PHP host.
+
+## Previous verification - 6 October 2026
 
 The role-and-link update was checked locally on Windows with PHP 8.2.12 and the Codex in-app browser:
 

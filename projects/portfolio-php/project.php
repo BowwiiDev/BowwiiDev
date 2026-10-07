@@ -27,7 +27,7 @@ header('X-Content-Type-Options: nosniff');
     <?php endif; ?>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="assets/vendor/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/style.css?v=project-roles-20261006">
+    <link rel="stylesheet" href="assets/css/style.css?v=martech-20261007">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -47,7 +47,7 @@ header('X-Content-Type-Options: nosniff');
         <figure class="case-workflow case-workflow-<?= e($case['theme']) ?>">
             <figcaption><span class="eyebrow">Workflow overview</span><h2><?= e($case['flow_title']) ?></h2></figcaption>
             <ol class="workflow-steps"><?php foreach ($case['flow'] as $step): ?><li><strong><?= e($step['title']) ?></strong><p><?= e($step['text']) ?></p></li><?php endforeach; ?></ol>
-            <p class="workflow-note">Illustrated application flow, based on the implementation.</p>
+            <p class="workflow-note">Illustrated implementation overview, based on the work described.</p>
         </figure>
         <div class="case-reading-layout">
             <nav class="case-contents" aria-label="Case study contents"><p class="eyebrow">In this case study</p><a href="#challenge">The brief</a><a href="#contribution">My contribution</a><a href="#decisions">Decisions &amp; trade-offs</a><a href="#delivery">Delivered capabilities</a><a href="#review">Validation focus</a><a href="#reflection">What I take from it</a><span><?= e($case['reading_time']) ?></span></nav>
@@ -61,7 +61,7 @@ header('X-Content-Type-Options: nosniff');
                 <aside class="case-boundary"><p><?= e($case['boundary']) ?></p></aside>
             </div>
         </div>
-        <footer class="case-next"><div><span class="eyebrow">Another side of my work</span><h2><?= e($case['next'] === 'career' ? 'SENA Career' : 'SENA Metro & Metro International') ?></h2><a class="text-link" href="project.php?id=<?= e($case['next']) ?>">Read the next case study <span aria-hidden="true">↗</span></a></div><a href="index.php#contact" class="btn btn-dark">Get in touch <span aria-hidden="true">↗</span></a></footer>
+        <footer class="case-next"><div><span class="eyebrow">Another side of my work</span><h2><?php foreach ($projects as $nextProject) { if ($nextProject['id'] === $case['next']) { echo e($nextProject['title']); break; } } ?></h2><a class="text-link" href="project.php?id=<?= e($case['next']) ?>">Read the next case study <span aria-hidden="true">↗</span></a></div><a href="index.php#contact" class="btn btn-dark">Get in touch <span aria-hidden="true">↗</span></a></footer>
     </article>
 </main>
 <?php else: ?>
